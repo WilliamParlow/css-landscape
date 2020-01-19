@@ -1,0 +1,667 @@
+html, body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.landscape {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgb(151, 187, 253), rgb(213, 227, 255));
+}
+
+.landscape * {
+  position: absolute;
+}
+
+/*
+
+ ------------------------ SUN -----------------------------
+
+*/
+
+.sun {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 100px;
+  right: 30px;
+  top: 30px;
+}
+
+.sun>div:nth-child(1) {
+  height: 0;
+  right: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: solid 20px transparent;
+  border-bottom: solid 20px transparent;
+  border-left: solid 20px yellow;
+  border-right: solid 20px transparent;
+}
+
+.sun>div:nth-child(2) {
+  height: 0;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: solid 20px transparent;
+  border-bottom: solid 20px transparent;
+  border-left: solid 20px transparent;
+  border-right: solid 20px yellow;
+}
+
+.sun>div:nth-child(3) {
+  height: 0;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  border-top: solid 20px yellow;
+  border-bottom: solid 20px transparent;
+  border-left: solid 20px transparent;
+  border-right: solid 20px transparent;
+}
+
+.sun>div:nth-child(4) {
+  height: 0;
+  left: 50%;
+  top: -35px;
+  transform: translateX(-50%);
+  border-top: solid 20px transparent;
+  border-bottom: solid 20px yellow;
+  border-left: solid 20px transparent;
+  border-right: solid 20px transparent;
+}
+
+.sun>div:nth-child(5) {
+  height: 0;
+  left: calc(100% - 22px);
+  top: 75%;
+  transform: rotate(45deg);
+  border-top: solid 20px transparent;
+  border-bottom: solid 20px transparent;
+  border-left: solid 20px yellow;
+  border-right: solid 20px transparent;
+}
+
+.sun>div:nth-child(6) {
+  height: 0;
+  right: calc(100% - 22px);
+  top: 75%;
+  transform: rotate(45deg);
+  border-top: solid 20px yellow;
+  border-bottom: solid 20px transparent;
+  border-left: solid 20px transparent;
+  border-right: solid 20px transparent;
+}
+
+.sun>div:nth-child(7) {
+  height: 0;
+  left: calc(100% - 22px);
+  top: -15%;
+  transform: rotate(45deg);
+  border-top: solid 20px transparent;
+  border-bottom: solid 20px yellow;
+  border-left: solid 20px transparent;
+  border-right: solid 20px transparent;
+}
+
+.sun>div:nth-child(8) {
+  height: 0;
+  left: -18px;
+  top: -15%;
+  transform: rotate(45deg);
+  border-top: solid 20px transparent;
+  border-bottom: solid 20px transparent;
+  border-left: solid 20px transparent;
+  border-right: solid 20px yellow;
+}
+
+/*
+
+ ------------------------ CLOUD -----------------------------
+
+*/
+
+.cloud {
+  height: 100px;
+  width: 16vw;
+  min-width: 600px;
+}
+
+.cloud>div {
+  position: relative;
+  border-radius: 100px;
+  height: 100px;
+  width: 100%;
+}
+
+.cloud>div>div {
+  position: absolute;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, .8);
+  display: inline-block;
+}
+
+/*
+
+ ------------------------ CLOUD 1 -----------------------------
+
+*/
+
+.cloud-1 {
+  left: 30vw;
+  top: 0vh;
+}
+
+.cloud-1>div>div:nth-child(1) {
+  top: 8vh;
+  left: 0;
+  width: 100%;
+  height: 18vh;
+}
+
+.cloud-1>div>div:nth-child(2) {
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 18vh;
+  z-index: 1;
+  background-color: #FFF;
+}
+
+/*
+
+ ------------------------ CLOUD 2 -----------------------------
+
+*/
+
+.cloud-2 {
+  left: 0;
+  top: 12vh;
+}
+
+.cloud-2>div>div:nth-child(1) {
+  top: 8vh;
+  left: 0;
+  width: 100%;
+  height: 18vh;
+}
+
+.cloud-2>div>div:nth-child(2) {
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 18vh;
+  z-index: 1;
+  background-color: #FFF;
+}
+
+/*
+
+ ------------------------ CLOUD 3 -----------------------------
+
+*/
+
+.cloud-3 {
+  left: 75vw;
+  top: 25vh;
+}
+
+.cloud-3>div>div:nth-child(1) {
+  top: 8vh;
+  left: 0;
+  width: 100%;
+  height: 18vh;
+}
+
+.cloud-3>div>div:nth-child(2) {
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 18vh;
+  z-index: 1;
+  background-color: #FFF;
+}
+
+/*
+
+ ------------------------ CLOUD 4 -----------------------------
+
+*/
+
+.cloud-4 {
+  left: 16vw;
+  top: 24vh;
+}
+
+.cloud-4>div>div:nth-child(1) {
+  top: 8vh;
+  left: 0;
+  width: 100%;
+  height: 18vh;
+}
+
+.cloud-4>div>div:nth-child(2) {
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 18vh;
+  z-index: 1;
+  background-color: #FFF;
+}
+
+/*
+
+ ------------------------ CLOUD 5 -----------------------------
+
+*/
+
+.cloud-5 {
+  left: 58vw;
+  top: 12vh;
+  z-index: 0;
+}
+
+.cloud-5>div>div:nth-child(1) {
+  top: 8vh;
+  left: 0;
+  width: 100%;
+  height: 18vh;
+  z-index: 0;
+}
+
+.cloud-5>div>div:nth-child(2) {
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 18vh;
+  z-index: 0;
+  background-color: #FFF;
+}
+
+/*
+
+ ------------------------ GROUND -----------------------------
+
+*/
+
+.ground {
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+}
+
+.ground * {
+  position: absolute;
+}
+
+/*
+
+ ------------------------ MOUNTAIN -----------------------------
+
+*/
+
+.mountain {
+  background-color: green;
+  border-radius: 100%;
+}
+
+/*
+
+ ------------------------ MOUNTAIN 1 -----------------------------
+
+*/
+
+.mountain-1 {
+  left: -30vw;
+  bottom: -30vh;
+  width: 60vw;
+  height: 60vh;
+  box-shadow: 0 5px 10px rgb(0, 93, 0);
+  z-index: 50;
+}
+
+/*
+
+ ------------------------ MOUNTAIN 2 -----------------------------
+
+*/
+
+.mountain-2 {
+  right: -16vw;
+  bottom: -15vh;
+  width: 50vw;
+  height: 60vh;
+}
+
+/*
+
+ ------------------------ MOUNTAIN 3 -----------------------------
+
+*/
+
+.mountain-3 {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -70vh;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0 5px 10px rgb(0, 93, 0);
+}
+
+/*
+
+ ------------------------ TREE -----------------------------
+
+*/
+
+.tree {
+  width: 40vw;
+  height: 60vh;
+  z-index: 98;
+}
+
+/*
+
+ ------------------------ TREE 1 -----------------------------
+
+*/
+
+.tree-1 {
+  left: -60%;
+  transform: translateX(-60%);
+  top: -8vh;
+}
+
+.tree-1 .stalk {
+  width: 10%;
+  height: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(82, 52, 34);
+  bottom: 0;
+  z-index: 99;
+}
+
+.tree-1 .tree-top {
+  z-index: 100;
+  width: 20vw;
+  height: 40%;
+  left: 50%;
+  border-radius: 100px;
+  transform: translateX(-50%);
+  background-color: rgb(0, 93, 0);
+  bottom: 60%;
+  z-index: 99;
+  box-shadow: 0 3px 10px -4px #000;
+}
+
+/*
+
+ ------------------------ TREE 2 -----------------------------
+
+*/
+
+.tree-2 {
+  left: 0;
+  transform: translateX(-60%);
+  top: -35vh;
+  z-index: 99999;
+}
+
+.tree-2 .stalk {
+  width: 10%;
+  height: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(82, 52, 34);
+  bottom: 0;
+  z-index: 99;
+}
+
+.tree-2 .tree-top {
+  z-index: 100;
+  width: 20vw;
+  height: 40%;
+  left: 50%;
+  border-radius: 100px;
+  transform: translateX(-50%);
+  background-color: rgb(0, 93, 0);
+  bottom: 60%;
+  z-index: 99;
+  box-shadow: 0 3px 10px -4px #000;
+}
+
+/*
+
+ ------------------------ TREE 3 -----------------------------
+
+*/
+
+.tree-3 {
+  left: -10%;
+  transform: translateX(-60%);
+  top: -43vh;
+  z-index: 200;
+}
+
+.tree-3 .stalk {
+  width: 10%;
+  height: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(82, 52, 34);
+  bottom: 0;
+  z-index: 99;
+}
+
+.tree-3 .tree-top {
+  z-index: 100;
+  width: 20vw;
+  height: 40%;
+  left: 50%;
+  border-radius: 100px;
+  transform: translateX(-50%);
+  background-color: rgb(0, 93, 0);
+  bottom: 60%;
+  z-index: 99;
+}
+
+/*
+
+ ------------------------ TREE 4 -----------------------------
+
+*/
+
+.tree-4 {
+  left: -25%;
+  transform: translateX(-60%);
+  top: -23vh;
+  z-index: 200;
+  z-index: -1;
+}
+
+.tree-4 .stalk {
+  width: 10%;
+  height: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(82, 52, 34);
+  bottom: 0;
+  z-index: 99;
+}
+
+.tree-4 .tree-top {
+  z-index: 100;
+  width: 20vw;
+  height: 40%;
+  left: 50%;
+  border-radius: 100px;
+  transform: translateX(-50%);
+  background-color: rgb(0, 93, 0);
+  bottom: 60%;
+}
+
+/*
+
+ ------------------------ CLOUD ANIMATION -----------------------------
+
+*/
+
+.cloud-1 {
+  animation: cloud-1-move 5s alternate infinite ease-in-out;
+}
+
+.cloud-2 {
+  animation: cloud-2-move 5s alternate infinite .3s ease-in-out;
+}
+
+.cloud-3 {
+  animation: cloud-3-move 5s alternate infinite .7s ease-in-out;
+}
+
+.cloud-4 {
+  animation: cloud-4-move 5s alternate infinite 1s ease-in-out;
+}
+
+.cloud-5 {
+  animation: cloud-5-move 5s alternate infinite 1.2s ease-in-out;
+}
+
+@keyframes cloud-1-move {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(3vh);
+  }
+}
+
+@keyframes cloud-2-move {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(3vh);
+  }
+}
+
+@keyframes cloud-3-move {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(3vh);
+  }
+}
+
+@keyframes cloud-4-move {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(3vh);
+  }
+}
+
+@keyframes cloud-5-move {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(3vh);
+  }
+}
+
+/*
+
+ ------------------------ TREE ANIMATION -----------------------------
+
+*/
+
+.tree-1 {
+  animation: tree-1-move 5s alternate infinite ease-in-out;
+  transform-origin: 50% bottom;
+}
+
+.tree-2 {
+  animation: tree-2-move 5s alternate infinite ease-in-out;
+  transform-origin: 50% bottom;
+}
+
+.tree-3 {
+  animation: tree-3-move 5s alternate infinite ease-in-out;
+  transform-origin: 50% bottom;
+}
+
+.tree-4 {
+  animation: tree-4-move 5s alternate infinite ease-in-out;
+  transform-origin: 50% bottom;
+}
+
+@keyframes tree-1-move {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes tree-2-move {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes tree-3-move {
+  0% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes tree-4-move {
+  0% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+/*
+
+ ------------------------ TREE ANIMATION -----------------------------
+
+*/
+
+.sun {
+  animation: sun-rotate 10s infinite linear;
+}
+
+@keyframes sun-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

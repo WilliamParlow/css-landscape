@@ -23,6 +23,34 @@ html, body {
 
 */
 
+.moon {
+  width: 100px;
+  height: 100px;
+  background: #FFF;
+  left: 30px;
+  top: 30px;
+}
+
+.moon::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(154, 189, 253), rgb(159, 192, 253));
+  left: 30%
+}
+
+.moon,
+.moon::after {
+  border-radius: 100px;
+}
+
+/*
+
+ ------------------------ SUN -----------------------------
+
+*/
+
 .sun {
   width: 100px;
   height: 100px;
